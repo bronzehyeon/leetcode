@@ -7,6 +7,9 @@ public:
         sort(nums.begin(), nums.end());
 
         for(int i = 0; i < N; i++){
+            if(nums[i] > 0){
+                break;
+            }
             int j = i + 1;
             int k = nums.size() - 1;
             while (j < k) {
